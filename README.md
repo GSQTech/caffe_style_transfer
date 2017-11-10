@@ -10,10 +10,10 @@ Fast artistic style transfer by using feed forward network.
 
 ## Convert
 ```
-python caffe_style_transfer.py <input_image_path> -m <model_path> -o <output_image_path> -g <use_gpu ? gpu_id : -1>
+python caffe_style_transfer.py <input_image_path> -m <model_path> -o <output_image_path> -g <use_gpu ? gpu_id : 0>
 ```
 
-This repo has pretrained models as an example.
+This repo has pretrained models as an example in model_caffe.
 
 - example:
 ```

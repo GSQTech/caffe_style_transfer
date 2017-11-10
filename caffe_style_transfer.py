@@ -14,8 +14,7 @@ def save_image(img, name):
 
 parser = argparse.ArgumentParser(description='Real-time style transfer image generator')
 parser.add_argument('input')
-parser.add_argument('--gpu', '-g', default=-1, type=int,
-                    help='GPU ID (negative value indicates CPU)')
+parser.add_argument('--gpu', '-g', default=0, type=int')
 parser.add_argument('--model', '-m', default='model_caffe/morden_art.caffemodel', type=str)
 parser.add_argument('--out', '-o', default='out.jpg', type=str)
 args = parser.parse_args()
